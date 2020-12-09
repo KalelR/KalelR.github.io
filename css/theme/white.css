@@ -55,16 +55,25 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 1.8em; }
+  /* font-size: 1.8em; } */
+  font-size: 2.0em; }
 
 .reveal h2 {
-  font-size: 1.5em; }
+  /* font-size: 1.5em; } */
+  font-size: 1.8em;
+  /* font-style:italic */
+  /* text-decoration-line: underline ; */
+  /* text-decoration-color: red; */
+  /* text-decoration-thickness: 0px ; */
+  /* border-bottom: 10px solid #000 width=100px; */
+}
 
 .reveal h3 {
-  font-size: 1.3em; }
+  /* font-size: 1.3em; } */
+  font-size: 1.5em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 .reveal h1 {
   text-shadow: none; }
