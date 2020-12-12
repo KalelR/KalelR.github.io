@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/theme/white.css">
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/toc-progress/toc-progress.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
     <!-- Printing and PDF exports -->
@@ -97,14 +96,14 @@
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <!-- <h2> Motivação - Sincronização de fase</h2> -->
-                <video data-autoplay src="./media/phasesynchronization-sin-synchronized_n100_fps16.mp4"></video>
+                <video controls data-autoplay src="./media/phasesynchronization-sin-synchronized_n100_fps16.mp4"></video>
             </section>
 
             <section data-background=b_color class="no-toc-progress">
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <!-- <h2> Motivação - Sincronização de fase</h2> -->
-                <video data-autoplay src="./media/phasesynchronization-sin-desynchronized_n100_fps16.mp4"></video>
+                <video controls data-autoplay src="./media/phasesynchronization-sin-desynchronized_n100_fps16.mp4"></video>
             </section>
 
 
@@ -157,7 +156,7 @@
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <!-- <h2> Motivação - Por que estudar metastabilidade </h2> -->
-                <video data-autoplay src="./media/metastability-video.mp4"></video>
+                <video controls data-autoplay src="./media/metastability-video.mp4"></video>
                 <p> Tirado de (Ma, 2016) </p>
             </section>
 
@@ -167,7 +166,7 @@
                 <h2> Metastabilidade</h2>
                 <ul>
                     <li class="fragment" style="text-align:left"> Metastabilidade constitui a base para a dinâmica da atividade cortical (Bressler, 2016)</li>
-                    <li class="fragment" style="text-align:left"> Sequência de estados cerebrais representa o fluxo de pensamento (stream of thoughts) (Fingelkurts, 2008)</p>
+                    <li class="fragment" style="text-align:left"> Sequência de estados metastáveis representa o fluxo de pensamento (stream of thoughts) (Fingelkurts, 2008)</p>
                 </ul>
             </section>
 
@@ -270,7 +269,7 @@
         <section data-background=b_color class="no-toc-progress" >
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
-            <video data-autoplay src="./media/HH-potential_n150_fps22.mp4"></video>
+            <video controls data-autoplay src="./media/HH-potential_n150_fps22.mp4"></video>
         </section>
         
         <section data-background=b_color class="no-toc-progress" >
@@ -284,49 +283,51 @@
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
             <h2> Modelo de Huber-Braun </h2>
-            \[\begin{align}C_\mathrm{M} \frac{dV_i(t)}{dt} &= -I_{\mathrm{d}} - I_{\mathrm{r}} - I_{\mathrm{l}} - I_{\mathrm{sd}} - I_{\mathrm{sr}} - I_{\mathrm{ext}}\\
+            \[\begin{align}C_\mathrm{M} \dot{V}_i &= -I_{\mathrm{Na}} - I_{\mathrm{K}} - I_{\mathrm{l}} - I_{\mathrm{sd}} - I_{\mathrm{sr}} - I_{\mathrm{ext}}\\
              \end{align}\]
         </section>
         
         <section data-background=b_color class="no-toc-progress" >
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
-            <video data-autoplay loop control src="./media/HB-potential_n150_fps22-grayalpha.mp4"></video>
+            <video data-autoplay loop controls src="./media/HB-potential_n150_fps22-grayalpha.mp4"></video>
         </section>
 
-        <section data-background=b_color class="no-toc-progress"> 
-        <!-- <section class="no-toc-progress">  -->
-            <h3> Tempos de disparo </h3>
-            <img height=500px src="./media/1Neuron_potential_Spike_Burst_Times_T_38.png"></img>
-        </section>
-
-
+        
+        
         <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
             <h3> Influência da temperatura </h3>
             \[\begin{align}
             \phi &= \phi_0^{(T-T_0)/\overline{T}_0} \\
-         \rho &= \rho_0^{(T-T_0)/\overline{T}_0}
-         \end{align}\]
+            \rho &= \rho_0^{(T-T_0)/\overline{T}_0}
+            \end{align}\]
         </section>
+        
         
         <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
             <img height=400px src="./media/oneneuron_potentials_bursttimes_bifurcation_temperatures.png"></img>
         </section>
         
+        <section data-background=b_color class="no-toc-progress"> 
+        <!-- <section class="no-toc-progress">  -->
+            <h3> Tempos de disparo </h3>
+            <img height=500px src="./media/1Neuron_potential_Spike_Burst_Times_T_38.png"></img>
+            <p> IBI: inter-burst interval</p>
+        </section>
         <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
             <h2> Sinapse </h2>
             <img data-autoplay src="./media/synaptic_connection.png"></img>
         </section>
 
-        <!-- <section data-background=b_color class="no-toc-progress" >
+        <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
-            <h2> Corrente sináptica </h2>
-            \[  I_{i, \mathrm{coup}} = \varepsilon(V_i - E_\mathrm{syn}) \sum\limits_{j \in \Gamma_i} r_j(t).
+            <h2> Química excitatória </h2>
+            \[ I_{i, \mathrm{ext}} = \varepsilon (V_i - E_\mathrm{syn}) \sum\limits_{j \in \Gamma_i} r_j(t).
             \]
-        </section> -->
+        </section>
 
             <section data-background=b_color class="no-toc-progress" >
                 <aside class="notes">  </aside>
@@ -340,7 +341,7 @@
                 <h2> Resumo da rede </h2>
                 <ol> 
                     <li class="fragment"> Neurônios bursting </li>
-                    <li class="fragment"> Sinapses químicas </li>
+                    <li class="fragment"> Sinapses químicas excitatórias </li>
                     <li class="fragment"> Topologia aleatória </li>
                 </ol>
             </section>
@@ -416,9 +417,17 @@
             </section>
 
             <section data-background=b_color class="no-toc-progress" > 
+                <h2> Transformação de fase </h2>
+                    \[    \Phi(\theta) = \frac{|\mathrm{mod}(\theta,2\pi) - \pi|}{\pi}
+                    \]
+                    <p class="fragment"> $\theta \in [0, 2\pi] \rightarrow \Phi \in [0, 1] $ </p>
+                    <p class="fragment"> Diferença de fases $\Phi$ se comporta bem!</p>
+                </section>
+            <section data-background=b_color class="no-toc-progress" > 
                 <h2> Como calcular os clusters</h2>
                 <ol>
-                    <li class="fragment"> Calcula diferença entre fases do cluster e fase dos neurônios fora. </li>
+                    <li class="fragment"> Inicializa o cluster com um neurônio. </li>
+                    <li class="fragment"> Calcula diferença entre fases do cluster e fases dos neurônios fora. </li>
                     <li class="fragment"> Colocar no cluster os neurônios com diferença de fase abaixo de um limiar $\Phi_\mathrm{th}$ </li>
                     <li class="fragment"> $\Phi_\mathrm{th}$ -> quão parecidas são as fases</li>
                 </ol>
@@ -488,10 +497,15 @@
             <img data-autoplay src="./media/mean_drift.png"></img>
         </section>
 
-        <!-- <section data-background=b_color class="no-toc-progress"> 
-            <video data-autoplay src="./media/"></video>
-        </section> -->
+        <section data-background=b_color class="no-toc-progress"> 
+            <h4> $T = 38° C, \epsilon = 0.00084$ </h4>
+            <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.00084-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
+        </section>
 
+        <section data-background=b_color class="no-toc-progress"> 
+            <h4> $T = 38° C, \epsilon = 0.008$ </h4>
+            <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.008-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
+        </section>
 
         <section data-background=b_color class="no-toc-progress"> 
             <img data-autoplay src="./media/v2_stayProbability.png"></img>
@@ -552,6 +566,7 @@
 
 
 
+
     <section> 
         <section data-background=b_color > 
             <h1> Conclusões  </h1>
@@ -574,11 +589,28 @@
 
 
         <section data-background=b_color > 
-        <section data-background=b_color > 
+        <!-- <section data-background=b_color >  -->
             <h2> Parte 2 - Metastabilidade </h1>
                 <p class="fragment"> Definição de metastabilidade. </p>
                 <p class="fragment"> Importância de estudar várias escalas e as relações entre elas. </p>
                 <p class="fragment"> Ilustração numa rede relativamente simples. </p>
+        </section>
+
+        <section data-background=b_color class="no-toc-progress">
+            <h1> Obrigado!</h1> 
+        </section>
+
+        <section data-background="./media/fundo-capa.jpg">
+            <aside class="notes"> Sincronização de fase e metastabilidade em redes neurais </aside>
+            <h1> Sincronização de fase e metastabilidade em redes neurais</h1>
+            <hr>
+            <div>
+                Kalel Luiz Rossi<br>
+                <p style="font-size:61.8%"> 
+                    Pré-defesa de Mestrado<br>
+                    UFPR<br>
+                </p>
+            </div>
         </section>
 
 
@@ -599,7 +631,7 @@
 
         
         <!-- Supplementary slides.  -->
-    <section>
+    <!-- <section>
 
         <section data-background=b_color class="no-toc-progress">
             <h1> Supplementary slides</h1>
@@ -637,7 +669,7 @@
             <p class="fragment"> Passo 2: Calcula a diferença entre a fase do cluster e a fase dos outros neuronios -> \[ \{\Delta \Phi \} \] </p>
             <p class="fragment"> Passo 3: Escolhe a menor diferença de fase, e compara com um limiar -> \[\min(\Delta \Phi) < \Phi_\mathrm{th} ?\] </p>
             <p class="fragment"> Passo 4: Se for menor, coloca no cluster, atualiza a fase média, e repete</p>
-            </section>
+            </section> -->
 
     </section> 
     </div>
@@ -646,8 +678,6 @@
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script src="plugin/math/math.js"></script>
-<script src="plugin/chalkboard/plugin.js"></script>
-<script src="plugin/menu/menu.js"></script>
 
 <script>
     // More info about config & dependencies:
@@ -655,8 +685,9 @@
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
         // center:false,
+        // controls: true,
+        controls: false,
         history: true, // Push each slide change to browser history.
-        controls: false, // Remove controls in bottom right corner.
         width: 1000,
         height: 800,
         // backgroundTransition: 'fade', // Make all transitions fade transitions by default. 
@@ -707,3 +738,5 @@
 </body>
 
 </html>
+
+
