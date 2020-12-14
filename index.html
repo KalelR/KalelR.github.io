@@ -41,9 +41,10 @@
             </section>
         
 
-        <!-- <section data-background=b_color>  -->
-        <section data-background="./media/Shuffle.png" > 
-            <section> 
+        <section data-background=b_color> 
+        <!-- <section data-background="./media/Shuffle-loweralpha.png" >  -->
+            <!-- <section>  -->
+            <section data-background="./media/Shuffle-loweralpha.png"  > 
                 <h2> Introdução </h2>
             </section>
 
@@ -56,11 +57,17 @@
                 <p class="fragment" style="text-align:left"> Comportamento, sincronização de fase</p>
                 <p class="fragment" style="text-align:left"> Estudo de metastabilidade em neurociência</p> -->
 
-                <ul style="text-align:left">
+
+                <ol style="text-align:left">
+                    <li class="fragment"> Caracterização da rede, sincronização de fase </li>
+                    <li class="fragment"> Discussão sobre metastabilidade</li>
+                  </ol>
+
+                <!-- <ul style="text-align:left">
                     <li class="fragment">Rede de neurônios com bursts</li>
                     <li class="fragment"> Comportamento, sincronização de fase</li>
                     <li class="fragment"> Metastabilidade em neurociência</li>
-                  </ul>
+                  </ul> -->
             </section>
 
             <section>
@@ -79,6 +86,11 @@
             
 
             <!-- <section data-background=b_color> -->
+            <section> 
+                <h3> No final das contas, o objetivo é ajudar na compreensão do sistema nervoso.</h3>
+                <img class="fragment" src="./media/brain-joke.jpg">
+            </section>
+
             <section>
                 <aside class="notes">  </aside>
                 <h2> Motivação - Sincronização de fase</h2>
@@ -90,20 +102,21 @@
                     <li class="fragment"> Fase: variável para indicar o status atual de uma oscilação. </li>
                     <li class="fragment"> Sincronização: atividade ocorrendo simultâneamente </li>
                 </ul>
+
             </section>
 
             <section data-background=b_color class="no-toc-progress">
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <!-- <h2> Motivação - Sincronização de fase</h2> -->
-                <video controls data-autoplay src="./media/phasesynchronization-sin-synchronized_n100_fps16.mp4"></video>
+                <video controls data-autoplay loop src="./media/phasesynchronization-sin-synchronized_n100_fps16.mp4"></video>
             </section>
 
             <section data-background=b_color class="no-toc-progress">
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <!-- <h2> Motivação - Sincronização de fase</h2> -->
-                <video controls data-autoplay src="./media/phasesynchronization-sin-desynchronized_n100_fps16.mp4"></video>
+                <video controls data-autoplay loop src="./media/phasesynchronization-sin-desynchronized_n100_fps16.mp4"></video>
             </section>
 
 
@@ -145,12 +158,12 @@
                 </ul>
             </section>
 
-            <section data-background=b_color>
+            <section data-transition="zoom" data-background=b_color >
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
                 <h2> Motivação - Metastabilidade </h2>
-                <p class="fragment"> Regime em que os padroes de atividade de um sistema variam incessantemente </p>
-            </section>
+                <p class="fragment"> Regime em que os padrões de atividade de um sistema variam incessantemente </p>
+            </section> 
             
             <section data-background=b_color class="no-toc-progress" >
             <!-- <section class="no-toc-progress"> -->
@@ -163,7 +176,7 @@
             <section data-background=b_color class="no-toc-progress">
             <!-- <section class="no-toc-progress"> -->
                 <aside class="notes">  </aside>
-                <h2> Metastabilidade</h2>
+                <h2> Cérebro metastável</h2>
                 <ul>
                     <li class="fragment" style="text-align:left"> Metastabilidade constitui a base para a dinâmica da atividade cortical (Bressler, 2016)</li>
                     <li class="fragment" style="text-align:left"> Sequência de estados metastáveis representa o fluxo de pensamento (stream of thoughts) (Fingelkurts, 2008)</p>
@@ -171,13 +184,15 @@
             </section>
 
         
-    </section> 
+    <!-- </section>  -->
             <!-- <section class="no-toc-progress"> -->
     <!-- end of introduction section -->
     
-    <section>
-        <section class="no-toc-progress">
-         <!-- <section data-background=b_color> -->
+    <!-- <section data-background="./media/Shuffle-loweralpha.png" >  -->
+        <!-- <section class="no-toc-progress"> -->
+    </section>
+    <section data-background=b_color>
+        <section data-background="./media/Shuffle-loweralpha.png"  > 
          <h1> Metodologia </h1> 
         </section>     
         
@@ -205,53 +220,54 @@
         <section data-background=b_color class="no-toc-progress" >
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
-            <!-- <h2> Neurônio </h2> -->
+            <h3> Spike </h3>
             <img data-autoplay src="./media/neuron-spike.gif"></img>
             <p> Tirado de https://commons.wikimedia.org/wiki/File:Action_Potential.gif </p>
         </section>
-
-        <section data-background=b_color class="no-toc-progress" >
-        <!-- <section class="no-toc-progress"> -->
-            <aside class="notes">  </aside>
-            <!-- <h2> Neurônio </h2> -->
-            <img data-autoplay src="./media/neuron-ion-concentrations.png"></img>
-        </section>
+                    <section data-background=b_color class="no-toc-progress" >
+                    <!-- <section class="no-toc-progress"> -->
+                        <aside class="notes">  </aside>
+                        <!-- <h2> Neurônio </h2> -->
+                        <img data-autoplay src="./media/neuron-ion-concentrations.png"></img>
+                    </section>
         
         <section data-background=b_color class="no-toc-progress" data-transition="fade" >
             <aside class="notes">  </aside>
             <!-- <h2> Neurônio </h2> -->
             <img data-autoplay src="./media/neuron-spike-1.png"></img>
         </section>
-    
-        <section data-background=b_color class="no-toc-progress" data-transition="fade">
-        <!-- <section class="no-toc-progress" data-transition="fade" > -->
-            <aside class="notes">  </aside>
-            <!-- <h2> Neurônio </h2> -->
-            <img data-autoplay src="./media/neuron-spike-2.png"></img>
-        </section>
         
         <section data-background=b_color class="no-toc-progress" data-transition="fade">
-        <!-- <section class="no-toc-progress" data-transition="fade" > -->
-            <aside class="notes">  </aside>
-            <!-- <h2> Neurônio </h2> -->
-            <img data-autoplay src="./media/neuron-spike-3.png"></img>
-        </section>
+            <!-- <section class="no-toc-progress" data-transition="fade" > -->
+                <aside class="notes">  </aside>
+                <!-- <h2> Neurônio </h2> -->
+                <img data-autoplay src="./media/neuron-spike-2.png"></img>
+            </section>
+            
+            <section data-background=b_color class="no-toc-progress" data-transition="fade">
+                <!-- <section class="no-toc-progress" data-transition="fade" > -->
+                    <aside class="notes">  </aside>
+                    <!-- <h2> Neurônio </h2> -->
+                    <img data-autoplay src="./media/neuron-spike-3.png"></img>
+                </section>
+                
+                
+                <section data-background=b_color class="no-toc-progress" data-transition="fade">
+                    <!-- <section class="no-toc-progress" data-transition="fade" > -->
+                        <aside class="notes">  </aside>
+                        <!-- <h2> Neurônio </h2> -->
+                        <img data-autoplay src="./media/neuron-spike-4.png"></img>
+                    </section>
+                    
 
-        
-        <section data-background=b_color class="no-toc-progress" data-transition="fade">
-        <!-- <section class="no-toc-progress" data-transition="fade" > -->
-            <aside class="notes">  </aside>
-            <!-- <h2> Neurônio </h2> -->
-            <img data-autoplay src="./media/neuron-spike-4.png"></img>
-        </section>
-
-
+                    
         <section data-background=b_color class="no-toc-progress" >
         <!-- <section class="no-toc-progress" data-transition="fade" > -->
             <aside class="notes">  </aside>
             <h3> Modelagem </h3>
             <img data-autoplay src="./media/equivalent-circuit-kalel.png"></img>
         </section>
+
 
         
         <section data-background=b_color class="no-toc-progress" >
@@ -269,7 +285,7 @@
         <section data-background=b_color class="no-toc-progress" >
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
-            <video controls data-autoplay src="./media/HH-potential_n150_fps22.mp4"></video>
+            <video controls data-autoplay loop src="./media/HH-potential_n150_fps22.mp4"></video>
         </section>
         
         <section data-background=b_color class="no-toc-progress" >
@@ -310,50 +326,50 @@
             <img height=400px src="./media/oneneuron_potentials_bursttimes_bifurcation_temperatures.png"></img>
         </section>
         
-        <section data-background=b_color class="no-toc-progress"> 
-        <!-- <section class="no-toc-progress">  -->
-            <h3> Tempos de disparo </h3>
-            <img height=500px src="./media/1Neuron_potential_Spike_Burst_Times_T_38.png"></img>
-            <p> IBI: inter-burst interval</p>
-        </section>
         <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
             <h2> Sinapse </h2>
             <img data-autoplay src="./media/synaptic_connection.png"></img>
         </section>
-
+        
         <section data-background=b_color class="no-toc-progress" >
             <aside class="notes">  </aside>
             <h2> Química excitatória </h2>
             \[ I_{i, \mathrm{ext}} = \varepsilon (V_i - E_\mathrm{syn}) \sum\limits_{j \in \Gamma_i} r_j(t).
             \]
         </section>
-
-            <section data-background=b_color class="no-toc-progress" >
-                <aside class="notes">  </aside>
-                <h2> Topologia aleatória </h2>
-                <img height=400px src="./media/topology.png"></img>
-                <p> Figura adaptada de Watts-Strogatz </p>
-            </section> 
-
-
-            <section data-background=b_color class="no-toc-progress"> 
-                <h2> Resumo da rede </h2>
-                <ol> 
-                    <li class="fragment"> Neurônios bursting </li>
-                    <li class="fragment"> Sinapses químicas excitatórias </li>
-                    <li class="fragment"> Topologia aleatória </li>
-                </ol>
-            </section>
-
-            <section data-background=b_color > 
-                <h2> Medida de sincronização de fase </h2>
-            </section>
-
-
-
-            <section data-background=b_color class="no-toc-progress"> 
-                <h2> Definição de fase </h2>
+        
+        <section data-background=b_color class="no-toc-progress" >
+            <aside class="notes">  </aside>
+            <h2> Topologia aleatória </h2>
+            <img height=400px src="./media/topology.png"></img>
+            <p> Figura adaptada de Watts-Strogatz </p>
+        </section> 
+        
+        
+        <section data-background=b_color class="no-toc-progress"> 
+            <h2> Resumo da rede </h2>
+            <ol> 
+                <li class="fragment"> Neurônios bursting </li>
+                <li class="fragment"> Sinapses químicas excitatórias </li>
+                <li class="fragment"> Topologia aleatória </li>
+            </ol>
+        </section>
+        
+        <section data-background=b_color > 
+            <h2> Medida de sincronização de fase </h2>
+        </section>
+        
+        <section data-background=b_color class="no-toc-progress"> 
+        <!-- <section class="no-toc-progress">  -->
+            <h3> Tempos de disparo </h3>
+            <img height=500px src="./media/1Neuron_potential_Spike_Burst_Times_T_38.png"></img>
+            <p> IBI: inter-burst interval</p>
+        </section> 
+        
+        
+        <section data-background=b_color class="no-toc-progress"> 
+            <h2> Definição de fase </h2>
                 \[\theta_{i}(t) = 2\pi k_i + 2\pi \frac{t - t_{k,i}}{t_{k+1, i} - t_{k,i}}, \; (t_k < t < t_{k+1}) \]
             </section>
 
@@ -428,8 +444,9 @@
                 <ol>
                     <li class="fragment"> Inicializa o cluster com um neurônio. </li>
                     <li class="fragment"> Calcula diferença entre fases do cluster e fases dos neurônios fora. </li>
-                    <li class="fragment"> Colocar no cluster os neurônios com diferença de fase abaixo de um limiar $\Phi_\mathrm{th}$ </li>
+                    <li class="fragment"> Seleciona a menor e compara com um limiar $\Phi_\mathrm{th}$. </li>
                     <li class="fragment"> $\Phi_\mathrm{th}$ -> quão parecidas são as fases</li>
+                    <li class="fragment"> Se estiver abaixo, colocar o neuronio no cluster e repetir.</li>
                 </ol>
             </section>
 
@@ -471,8 +488,9 @@
         
 
     <section> 
+    <!-- <section data-background="./media/Shuffle-loweralpha.png" >  -->
 
-        <section data-background="#fff" > 
+        <section data-background="./media/Shuffle-loweralpha.png"  > 
             <h1> Resultados </h1>
         </section>
 
@@ -567,8 +585,10 @@
 
 
 
-    <section> 
-        <section data-background=b_color > 
+    <!-- <section>  -->
+    <section data-background=b_color > 
+        
+        <section data-background="./media/Shuffle-loweralpha.png" > 
             <h1> Conclusões  </h1>
         </section>
 
@@ -671,7 +691,8 @@
             <p class="fragment"> Passo 4: Se for menor, coloca no cluster, atualiza a fase média, e repete</p>
             </section> -->
 
-    </section> 
+            <section data-background="./media/Shuffle-loweralpha.png" > 
+            </section> 
     </div>
 </div> 
 
