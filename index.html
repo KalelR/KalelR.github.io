@@ -86,7 +86,7 @@
             
 
             <!-- <section data-background=b_color> -->
-            <section> 
+            <section class="no-toc-progress"> 
                 <h3> No final das contas, o objetivo é ajudar na compreensão do sistema nervoso.</h3>
                 <img class="fragment" src="./media/brain-joke.jpg">
             </section>
@@ -213,7 +213,7 @@
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
             <h2> Neurônio </h2>
-            <img data-autoplay src="./media/neuronio.png"></img>
+            <img data-autoplay height=550px src="./media/neuronio.png"></img>
             <p> Tirado de (Brown, 1999) </p>
         </section>
 
@@ -301,6 +301,7 @@
             <h2> Modelo de Huber-Braun </h2>
             \[\begin{align}C_\mathrm{M} \dot{V}_i &= -I_{\mathrm{Na}} - I_{\mathrm{K}} - I_{\mathrm{l}} - I_{\mathrm{sd}} - I_{\mathrm{sr}} - I_{\mathrm{ext}}\\
              \end{align}\]
+             <h6> (Braun, 1998) </h6>
         </section>
         
         <section data-background=b_color class="no-toc-progress" >
@@ -343,7 +344,7 @@
             <aside class="notes">  </aside>
             <h2> Topologia aleatória </h2>
             <img height=400px src="./media/topology.png"></img>
-            <p> Figura adaptada de Watts-Strogatz </p>
+            <p> Figura adaptada de (Watts & Strogatz, 1998) </p>
         </section> 
         
         
@@ -410,6 +411,8 @@
                 <h2> Ensemble </h2>
                 <img data-autoplay src="./media/variabilidade/matrix-IBI-ensemble-rects.png"></img>
             </section>
+
+
 
             <section data-background=b_color > 
                 <h2> Drift médio </h2>
@@ -510,19 +513,27 @@
             <img data-autoplay src="./media/variabilidade/matrix-IBI-ensemble-rects.png"></img>
         </section>
 
+            <section data-background=b_color class="no-toc-progress" >
+                <aside class="notes">  </aside>
+                <h2> Promiscuidade </h2>
+                <h4 class="fragment"> Variação nas fases relativas</h4>
+                <ul>
+                   <li class="fragment"> Tipo de metastabilidade</li>
+                </ul>
+            </section>
+            
+            <section data-background=b_color class="no-toc-progress"> 
+                <h4> $T = 38° C, \epsilon = 0.00084$ </h4>
+                <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.00084-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
+            </section>
+    
+            <section data-background=b_color class="no-toc-progress"> 
+                <h4> $T = 38° C, \epsilon = 0.008$ </h4>
+                <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.008-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
+            </section>
 
         <section data-background=b_color class="no-toc-progress"> 
             <img data-autoplay src="./media/mean_drift.png"></img>
-        </section>
-
-        <section data-background=b_color class="no-toc-progress"> 
-            <h4> $T = 38° C, \epsilon = 0.00084$ </h4>
-            <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.00084-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
-        </section>
-
-        <section data-background=b_color class="no-toc-progress"> 
-            <h4> $T = 38° C, \epsilon = 0.008$ </h4>
-            <video data-autoplay controls loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.008-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
         </section>
 
         <section data-background=b_color class="no-toc-progress"> 
@@ -535,42 +546,95 @@
             <h2> Parte 2: Metastabilidade </h2>
         </section>
 
-        <section data-background=b_color class="no-toc-progress"> 
-            <img data-autoplay src="./media/brain-scales-betzel2017.png"></img>
+ 
+        
+        <section data-background=b_color class="no-toc-progress" > 
+            <h2> Metastabilidade: definições soltas na literatura de neurociência </h2>
         </section>
 
+        <section data-background=b_color class="no-toc-progress"> 
+            <h3> Exemplo 1: Metastabilidade como:</h3> 
+            <p>  Variabilidade no grau de sincronização da rede</p>
+
+            <ul style="font-size:32px" > 
+            <li class="fragment"> Medida como $\sigma (R(t))$</li>
+            <li class="fragment"> Usada por (Lee and Frangou, 2017); (Alderson et al., 2020); (Shanahan, 2010); (Wildie and Shanahan, 2012); (Cabral et al., 2011); (Deco et al., 2017); (Kringelbach et al., 2015); (Váša et al., 2015) </li>
+            </ul>
+        </section>
 
         <section data-background=b_color class="no-toc-progress"> 
-            <h2> Escalas</h2> 
+            <h3> Exemplo 2: Metastabilidade como </h3> 
+            <p> Mudança na composição de clusters</p>
+            <ul style="font-size:32px" > 
+                <li class="fragment"> "Metastabilidade levando à formação de clusters transientes" </p> 
+            </ul> 
+        </section>    
+
+
+        <section data-background=b_color class="no-toc-progress"> 
+            <h3> Exemplo 3: Metastabilidade como</h3> 
+            <p> Mudança nas diferenças de fase</p>
+            <ul style="font-size:32px" >
+                <li class="fragment"> Medida como $\sigma(R_{ij}(t))$</li>
+            </ul>
+        </section>    
+
+        <section data-background=b_color class="no-toc-progress"> 
+            <h2> Várias definições operando em escalas diferentes! </h2>
+        </section>
+
+       <!-- <section data-background=b_color class="no-toc-progress"> 
+            <img data-autoplay height=680px src="./media/brain-scales-betzel2017.png"></img>
+            <h6> (Betzel, 2017)</h6>
+        </section>
+
+        
+        <section data-background=b_color class="no-toc-progress"> 
+            <h2> Escalas </h2> 
             <ul>
                 <li class="fragment"> Espacial: granularidade dos nodos</li>
                 <li class="fragment"> Topologica: quantidade de nodos</li>
                 <li class="fragment"> Temporal: escala temporal</li>
             </ul>
+            <!-- <h5> Betzel(2017)</h5> -->
+        <!-- </section> -->
+
+        <section data-background=b_color class="no-toc-progress"> 
+            
+
+            <div class="container">
+
+                <div class="col">
+                <img data-autoplay height=500px src="./media/brain-scales-betzel2017.png"></img>
+                </div>
+                <h6 class="fragment"> (Betzel, 2017) </h6>
+                
+                <div class="col">
+           <ul>
+                    <li class="fragment"> Espacial: granularidade dos nodos</li>
+                    <li class="fragment"> Topológica: quantidade de nodos</li>
+                    <li class="fragment"> Temporal: escala temporal</li>
+                </ul>
+                </div>
+                
+                </div>
+
+
         </section>
 
 
-        <section data-background=b_color class="no-toc-progress"> 
-            <h2> Exemplo 1:</h2> 
-            <p> Variabilidade no grau de sincronização da rede</p>
-            <p class="fragment"> Medida como $\sigma (R(t))$</p>
-            <h6 class="fragment"> Usada por (Lee and Frangou, 2017); (Alderson et al., 2020); (Shanahan, 2010); (Wildie and Shanahan, 2012); (Cabral et al., 2011); (Deco et al., 2017); (Kringelbach et al., 2015); (Váša et al., 2015) </h6>
+
+       <section data-background=b_color class="no-toc-progress"> 
+            <h2> Metastabilidade: definição </h2>
+            <p class="fragment"> Regime com mudança incessante em padrões distintos e estereotipados de atividade da rede</p>
+            <p class="fragment"> (Friston, 2000) </p>
         </section>
 
         <section data-background=b_color class="no-toc-progress"> 
-            <h2> Exemplo 2:</h2> 
-            <p> Metastabilidade levando à formação de clusters transientes</p>
-            <p class="fragment"> Medida como a taxa de mudança na composição de clusters</p>
-        </section>    
-
-
-        <section data-background=b_color class="no-toc-progress"> 
-            <h2> Exemplo 3:</h2> 
-            <p> Mudança nas diferenças de fases entre os nodos</p>
-            <p class="fragment"> Medida como $\sigma(R_{ij}(t))$</p>
-        </section>    
-
-
+            <h2> Metastabilidade e escalas </h2>
+            <p class="fragment"> Metastabilidade pode diferir em diferentes escalas ou níveis</p>
+        </section>
+        
         <section data-background=b_color class="no-toc-progress"> 
             <img data-autoplay src="./media/Rxt_Rijxt_T38.png"></img>
         </section>
@@ -593,27 +657,33 @@
         </section>
 
         <section data-background=b_color > 
-            <h2> Parte 1  </h1>
-                <p class="fragment"> Caracterização do comportamento da rede, </p>
-                <p class="fragment"> Comportamento da rede e as variabilidades, </p>
-                <p class="fragment"> Importância da dinâmica individual, </p>
-                <p class="fragment"> Promiscuidade, </p>
+            <h2> Parte 1 - Caracterização </h1>
+                <ul>
+                    <li class="fragment"> Caracterização do comportamento da rede</li>
+                    <li class="fragment"> Comportamento da rede e as variabilidades</li>
+                    <li class="fragment"> Importância da dinâmica individual </li>
+                    <li class="fragment"> Promiscuidade </li>
+                </ul>
         </section>
 
-
+        
         <section data-background=b_color > 
             <h2> Parte 1 - Variabilidade e Metastabilidade </h1>
-                <p class="fragment"> Metastabilidade ocorrendo numa rede sem clusterização e com neurõnios idênticos, </p>
-                <p class="fragment"> Variabilidade mede a assimetria dinâmica </p>
-        </section>
-
-
+                <ul>
+                    <li class="fragment"> Metastabilidade ocorrendo numa rede sem clusterização e com neurônios idênticos </li>
+                    <li class="fragment"> Variabilidade mede a assimetria dinâmica </li>
+                </ul>
+                
+                
+            </section>
         <section data-background=b_color > 
         <!-- <section data-background=b_color >  -->
             <h2> Parte 2 - Metastabilidade </h1>
-                <p class="fragment"> Definição de metastabilidade. </p>
-                <p class="fragment"> Importância de estudar várias escalas e as relações entre elas. </p>
-                <p class="fragment"> Ilustração numa rede relativamente simples. </p>
+                <ul>
+                    <li class="fragment"> Definição de metastabilidade </li>
+                    <li class="fragment"> Importância de estudar várias escalas e as relações entre elas </li>
+                    <li class="fragment"> Ilustração numa rede relativamente simples </li>
+                </ul>
         </section>
 
         <section data-background=b_color class="no-toc-progress">
