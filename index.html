@@ -70,7 +70,8 @@
 
             <section data-background=  b_color data-transition="none" class="no-toc-progress"  >
                 <h2> Rede neurais: nós  </h2>
-                <img height=400px src="./media/topology.png "></img>
+                <img height=400px src="./media/topology-random-wattsstrogatz.png "></img>
+                <p class="fragment"> Tirada de (Watts, 1998) </p>
             </section>
 
             <section data-background=  b_color data-transition="none" class="no-toc-progress"  >
@@ -210,8 +211,9 @@
         <!-- <section class="no-toc-progress"> -->
             <aside class="notes">  </aside>
             <h3> Spike </h3>
-            <img data-autoplay src="./media/neuron-spike.gif"></img>
-            <p> Tirado de https://commons.wikimedia.org/wiki/File:Action_Potential.gif </p>
+            <img data-autoplay height=450px src="./media/neuron-spike.gif"></img>
+            <img class="fragment" data-autoplay height=450px src="./media/neuron-spike.svg"></img>
+            <!-- <p> Tirado de https://commons.wikimedia.org/wiki/File:Action_Potential.gif </p> -->
         </section>
 
         <section data-background=b_color class="no-toc-progress" >
@@ -221,7 +223,7 @@
                 <div class="container">
                     <div class="col">
                             \[{\small  \begin{align}
-                            C_\mathrm{M} \dot{V} &= I - \overline{g}_{\mathrm{K}} n^4(V-E_{\mathrm{K}}) - \overline{g}_{\mathrm{Na}} m^3 h (V- E_{\mathrm{Na}}) - g_{\mathrm{L}} (V - E_{\mathrm{L}})\\ 
+                            C_\mathrm{M} \dot{V} &= I - \overline{g}_{\mathrm{K}} n^4(V-E_{\mathrm{K}}) - \\ &-\overline{g}_{\mathrm{Na}} m^3 h (V- E_{\mathrm{Na}}) - g_{\mathrm{L}} (V - E_{\mathrm{L}})\\ 
                             \dot{n} &= \alpha_n(V) (1-n) - n\beta_n(V) \\ 
                             \dot{m} &= \alpha_m(V)(1-m) - m\beta_m(V) \\ 
                             \dot{h} &= \alpha_h(V)(1-h) - h\beta_h(V)
@@ -239,7 +241,7 @@
             <div class="container">
                 <div class="col">
                     \[
-                    {\normalsize
+                    {\small
                         \begin{align}
                         C_\mathrm{M} \frac{dV_i(t)}{dt} &= -J_{\mathrm{d}} - J_{\mathrm{r}} - J_{\mathrm{sd}} - J_{\mathrm{sr}} - J_{\mathrm{l}} - J_{\mathrm{ext}} \\
                         J_{\mathrm{l}}  &=  \bar{g}_\mathrm{l} (V - E_\mathrm{l})\\
@@ -261,10 +263,10 @@
             <aside class="notes">  </aside>
             <h2> Modelo de Huber-Braun </h2>
             <h3> Influência da temperatura </h3>
-                    \[\begin{align}
+                    \[ {\small \begin{align}
                     \phi &= \phi_0^{(T-T_0)/\overline{T}_0} \\
                 \rho &= \rho_0^{(T-T_0)/\overline{T}_0}
-                \end{align}\]
+                \end{align} } \]
                     <img height=350px class="fragment" src="./media/oneneuron_potentials_bursttimes_bifurcation_temperatures.png"></img>
         </section>
         
@@ -282,13 +284,13 @@
                     
                     <h3 class="fragment"> Sinapses químicas excitatórias</h3>
                     <img class="fragment" data-autoplay height=300px src="./media/synaptic_connection_notitle.png"></img>
-                    <div class="fragment"> \[ J_{i, \mathrm{ext}} = \varepsilon (V_i - E_\mathrm{syn}) \sum\limits_{j \in \Gamma_i} r_j(t).
+                    <div class="fragment"> \[ J_{i, \mathrm{ext}} = \varepsilon (V_i - E_\mathrm{syn}) \sum\limits_{j \in \Gamma_i} r_j(t)
                         \]</div>
                         <p class="fragment"> $\epsilon$: parâmetro para força do acoplamento</p>
                 </div>
                 <div class="col">
                     <h3 class="fragment"> Topologia aleatória </h3>
-                    <img class="fragment" height=350px src="./media/topology.png"></img>
+                    <img class="fragment" height=350px src="./media/topology-random-wattsstrogatz.png"></img>
                     <p class="fragment"> $N = 1000$ neurônios, $\mathcal{N} = 4000$ conexões</p>
                     <p class="fragment"> (Adaptada de Watts & Strogatz, 1998)</p>
                     </div>
@@ -425,7 +427,7 @@
         <section data-background=b_color class="no-toc-progress"> 
             <h2> Fases dos neurônios </h2>
             <video data-autoplay  loop src="./media/HB-promiscuity-phasescircle-n240-fps15-T38-eps0.00084-directed_ws_N_1000_p_1.0_k_4_seed_1.0.dat.mp4"></video>
-            <h4> $T = 38° C, \epsilon = 0.00084, R = 0.92$ </h4>
+            <h4> $T = 38° C, \epsilon = 0.00084, R = 0.82$ </h4>
     </section>
 
         <!-- <section data-background=b_color class="no-toc-progress" > -->
@@ -482,7 +484,7 @@
                 <div class="container"> 
                     <div class="col"> 
                         <h4 class="fragment"> Transformação de fase: $    \Phi(\theta) = \frac{|\mathrm{mod}(\theta,2\pi) - \pi|}{\pi} $ </h4>
-                        <p class="fragment"> $\theta \in [0, 2\pi] \rightarrow \Phi \in [0, 1] $ </p>
+                        <p class="fragment"> $\theta \in [0, \infty) \rightarrow \Phi \in [0, 1] $ </p>
                         <p class="fragment"> Diferença de fases $\Phi$ se comporta bem!</p>
                     </div>
                     <div class="col">
@@ -699,21 +701,21 @@
         </section>    
 
 
-        <section data-background=b_color > 
-            <h3> Na rede </h3> 
-            <p class="fragment"> Promiscuidade é um tipo de metastabilidade</p>
-        </section>
+        <!-- <section data-background=b_color >  -->
+            <!-- <h3> Na rede </h3>  -->
+            <!-- <p class="fragment"> Promiscuidade é um tipo de metastabilidade</p> -->
+        <!-- </section> -->
 
+        <section data-background=b_color class="no-toc-progress"> 
+            <!-- <img data-autoplay src="./media/R_stdR_stayProb_stdRij.png"></img> -->
+             <img height=800px src="./media/R_stdR_stayProb_stdRij.png"></img>
+        </section>
         
         <section data-background=b_color class="no-toc-progress"> 
             <img data-autoplay src="./media/Rxt_Rijxt_T38.png"></img>
             <h4 class="fragment"> Metastabilidade pode depender da escala! </h4>
         </section>
 
-        <section data-background=b_color class="no-toc-progress"> 
-            <!-- <img data-autoplay src="./media/R_stdR_stayProb_stdRij.png"></img> -->
-             <img height=800px src="./media/R_stdR_stayProb_stdRij.png"></img>
-        </section>
     </section>
     <!-- end of results -->
 
@@ -737,7 +739,7 @@
                     <!-- <li class="fragment"> Promiscuidade: intermitência de phase-locking ou de sincronização de fase </li> -->
                     <li class="fragment"> Promiscuidade: caracterização e efeito nos clusters  </li>
                     <!-- (outra coluna) -->
-                    <li class="fragment"> Metastabilidade e heterogeneidada dinâmica </li>
+                    <li class="fragment"> Metastabilidade e heterogeneidade dinâmica </li>
                     <li class="fragment"> Variabilidade mede a heterogeneidade dinâmica </li>
                     <li class="fragment"> Metastabilidade não precisa surgir de parâmetros distintos </li>
                 </ul>
@@ -764,17 +766,20 @@
             </section>
 
 
-        <!-- <section data-background=b_color class="no-toc-progress"> -->
-            <!-- <h1> Obrigado!</h1>  -->
-            <!-- <ul>  -->
-                <!-- <li class="fragment"> À banca</li> -->
-                <!-- <li class="fragment"> À banca da pré-defesa</li> -->
-                <!-- <li class="fragment"> À minha família </li> -->
-                <!-- <li class="fragment"> Aos meus colegas e amigos Roberto Budzinski e Bruno Boaretto </li> -->
-                <!-- <li class="fragment"> À Maíra </li> -->
-                <!-- <li class="fragment"> Aos meus amigos Carlos, João, Rafaela, Lucas, Alexandre </li> -->
-            <!-- </ul> -->
-        <!-- </section> -->
+        <section data-background=b_color class="no-toc-progress">
+            <h1> Obrigado!</h1> 
+            <ul> 
+                <li class="fragment"> À banca</li>
+                <li class="fragment"> À banca da pré-defesa</li>
+                <li class="fragment"> Ao meu orientador, Sergio </li>
+                <li class="fragment"> À minha futura orientadora, Ulrike Feudel </li>
+                <li class="fragment"> Ao CNPq </li>
+                <li class="fragment"> À minha família </li>
+                <li class="fragment"> Aos meus colegas e amigos Roberto Budzinski e Bruno Boaretto </li>
+                <li class="fragment"> À Maíra </li>
+                <li class="fragment"> Aos meus amigos Carlos, João, Rafaela, Lucas, Alexandre </li>
+            </ul>
+        </section>
 
         <section data-background="./media/fundo-capa.jpg">
             <aside class="notes"> Sincronização de fase e metastabilidade em redes neurais </aside>
@@ -862,8 +867,8 @@
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
         // center:false,
-        controls: true,
-        // controls: false,
+        // controls: true,
+        controls: false,
         history: true, // Push each slide change to browser history.
         width: 1200,
         height: 800,
